@@ -1,0 +1,118 @@
+:root{
+    --primaryText: black;
+    --secondaryText: grey; 
+
+    --primaryColor: white;
+    --secondaryColor: #eaeaea;
+
+    --borderColor: #c1c1c1;
+}
+
+html, body{
+    padding: 0;
+    margin: 0;
+}
+
+h1, h2, h3, h4, h5, h6, strong{
+    color: var(--primaryText);
+    font-family: 'Heebo', sans-serif;
+}
+
+a{
+    text-decoration: none;
+    color:#17a2b8;
+    font-family: 'Arimo', sans-serif;
+
+}
+
+ul{
+    list-style: none;
+}
+
+h1{ font-size: 56px;}
+h2{ font-size: 36px;}
+h3{ font-size: 28px;}
+h4{ font-size: 24px;}
+h5{ font-size: 20px;}
+h6{ font-size: 16px;}
+
+p, li, span, label, input, textarea, {
+    color: var(--secondaryText);
+    font-family: 'Arimo', sans-serif;
+}
+
+.section-1{
+    background-color: var(--primaryColor);
+    border-bottom: 1px solid var(--borderColor);
+    overflow: auto;
+}
+
+.section-2{
+    background-color: var(--secondaryColor);
+    border-bottom: 1px solid var(--borderColor);
+    overflow: auto;
+
+}
+
+.main-container{
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.welcome-wrapper{
+    display: grid;
+    text-align: center;
+    align-content: center;
+    min-height: 10em;
+}
+
+.intro-wrapper{
+    background-color: var(--secondaryColor);
+    border: 1px solid var(--borderColor);
+
+    /* shadow */
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 3em 30em;
+    grid-template-areas: 
+        'nav-wrapper nav-wrapper'
+        'left-column right-column';
+}
+
+.nav-wrapper{
+    display: flex;
+    grid-area: nav-wrapper;
+    border-bottom: 1px solid var(--borderColor);
+    justify-content: space-between;
+    align-items: center;
+}
+
+.left-links{
+    padding: 10px;
+    margin: 0;
+}
+.left-links li{
+    display: inline-block;
+    margin-left: 5px;
+    margin-right: 5px;
+}
+
+.right-links{
+    padding: 10px;
+    margin: 0;
+}
+
+.left-column{
+    grid-area: left-column;
+}
+
+.right-column{
+    grid-area: right-column;
+}
+
+@media screen and (max-width: 1200px){
+    .main-container{
+        width: 95%;
+    }
+}
