@@ -38,7 +38,7 @@ h4{ font-size: 24px;}
 h5{ font-size: 20px;}
 h6{ font-size: 16px;}
 
-p, li, span, label, input, textarea, {
+p, li, span, label, input, textarea {
     color: var(--secondaryText);
     font-family: 'Arimo', sans-serif;
 }
@@ -72,6 +72,7 @@ p, li, span, label, input, textarea, {
     background-color: var(--secondaryColor);
     border: 1px solid var(--borderColor);
     border-radius: 5px;
+    margin-bottom: 25px;
 
     /* shadow */
 
@@ -109,6 +110,7 @@ p, li, span, label, input, textarea, {
     grid-area: left-column;
     padding-top: 25px;
     padding-bottom: 25px;
+    text-align: center;
 }
 #profile_pic{
     display: block;
@@ -154,6 +156,33 @@ p, li, span, label, input, textarea, {
     padding-bottom: 25px;
 }
 
+.about-wrapper{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    gap: 100px;
+    padding-bottom: 25px;
+}
+
+#skills{
+    display: flex;
+    justify-content: space-evenly;
+    border: 1px solid red;
+
+}
+.skill-images{
+}
+.skill-image-container{
+    display: flex;
+}
+.skill-circle{
+    border: 1px solid black;
+    margin-top: 10px;
+    margin-right: 10px;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
 @media screen and (max-width: 1200px){
     .main-container{
         width: 95%;
@@ -171,6 +200,9 @@ p, li, span, label, input, textarea, {
         position: relative;
     }
     #bootcamp, #my-title, #college{
-       margin: auto;
+       margin-left: auto;
+       margin-right: auto;
+       margin-bottom: 20px;
+       margin-top: 0;
     }
 }
