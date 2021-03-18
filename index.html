@@ -84,25 +84,29 @@
 
             <div class="project-wrapper">
 
-                <div class="project">
+                <div id="capitall" class="project">
                     <img class="thumbnail" src="images/placeholder.jpeg">
                     <div class="project-preview">
                         <h6 class="project-title">Capitall</h6>
-                        <p class="project-desc">project description</p>
+                        <p class="project-desc">Application that allows the user to track financial transactions, accounts, budgets, saving goals, and bills for people to
+                            achieve their financial goals.</p>
                     </div>
                 </div>
-                <div class="project">
+                <div id="local-voyage" class="project">
                     <img class="thumbnail" src="images/placeholder.jpeg">
                     <div class="project-preview">
                         <h6 class="project-title">Local Voyage</h6>
-                        <p class="project-desc">project description</p>
+                        <p class="project-desc">Application allows the user to list hotels, landmarks, restaurants, and the best dishes in those restaurants for travel
+                            planning and to share with friends.</p>
                     </div>
                 </div>
-                <div class="project">
+                <div id="marketplace" class="project">
                     <img class="thumbnail" src="images/placeholder.jpeg">
                     <div class="project-preview">
                         <h6 class="project-title">MarketPlace</h6>
-                        <p class="project-desc">project description</p>
+                        <p class="project-desc">Application designed to serve as a virtual marketplace that allows users to post, view and buy items from other users that
+                            are for sale. This platform allows users to get contact information from the seller to contact them directly if interested in
+                            purchasing their item.</p>
                     </div>
             </div>
         </div>
@@ -162,5 +166,76 @@
         </div>
     </section> 
     
+    <script>
+        let arr = [];
+        const javascript = document.querySelector("#javascript");
+        const react = document.querySelector("#react");
+        const redux = document.querySelector("#redux");
+        const ruby = document.querySelector("#ruby");
+        const rails = document.querySelector("#rails");
+        const sql = document.querySelector("#sql");
+        const html_css = document.querySelector("#html-css");
+        const bootstrap = document.querySelector("#bootstrap");
+
+        function renderCapitall() {
+            arr.push(react, redux, rails, sql, bootstrap)
+            arr.forEach(tech => {
+                tech.style.borderWidth = "thick";
+                tech.style.margin = "1px"
+            })
+            }
+        function phaseOutCapitall(){
+            arr.forEach(tech => {
+                tech.style.borderWidth = "thin";
+                tech.style.margin = "5px";
+            })
+            arr = [];
+            }
+
+        function renderLocalVoyage() {
+            arr.push(javascript, rails, sql, html_css)
+            arr.forEach(tech => {
+                tech.style.borderWidth = "thick";
+                tech.style.margin = "1px"
+            })
+            }
+        function phaseOutLocalVoyage(){
+            arr.forEach(tech => {
+                tech.style.borderWidth = "thin";
+                tech.style.margin = "5px"
+            });
+            arr = [];
+        }
+
+        function renderMarketplace() {
+            arr.push(ruby, rails, sql, html_css, bootstrap)
+            arr.forEach(tech => {
+                tech.style.borderWidth = "thick";
+                tech.style.margin = "1px"
+            })
+
+            }
+        function phaseOutMarketplace(){
+            arr.forEach(tech => {
+                tech.style.borderWidth = "thin";
+                tech.style.margin = "5px";
+            });
+            arr = [];
+        }
+
+
+        let projectOne = document.querySelector("#capitall")
+        projectOne.addEventListener("mouseover", renderCapitall)
+        projectOne.onmouseout = phaseOutCapitall
+
+        let projectTwo = document.querySelector("#local-voyage")
+        projectTwo.addEventListener("mouseover", renderLocalVoyage)
+        projectTwo.onmouseout = phaseOutLocalVoyage
+
+        let projectThree = document.querySelector("#marketplace")
+        projectThree.addEventListener("mouseover", renderMarketplace)
+        projectThree.onmouseout = phaseOutMarketplace
+
+    </script>
 </body>
 </html>
