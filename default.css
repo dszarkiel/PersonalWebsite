@@ -13,6 +13,7 @@
 html, body{
     padding: 0;
     margin: 0;
+    scroll-behavior: smooth;
 }
 
 h1, h2, h3, h4, h5, h6, strong{
@@ -176,7 +177,8 @@ p, li, span, label, input, textarea {
     line-height: 100px;
 }
 .skill-circle:hover{
-    border: 3px solid blue;
+    border: 3px solid coral;
+    box-sizing: border-box;   
 }
 
 .project-wrapper, .blog-wrapper{
