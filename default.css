@@ -63,12 +63,17 @@ p, li, span, label, input, textarea {
 }
 
 .welcome-wrapper{
-    display: grid;
     text-align: center;
     align-content: center;
     min-height: 10em;
 }
-
+.welcome-wrapper h1{
+    margin-bottom: 5px;
+}
+.welcome-wrapper h6{
+    margin-bottom: 50px;
+    margin-top: 5px;
+}
 .intro-wrapper{
     background-color: var(--secondaryColor);
     border: 1px solid var(--borderColor);
@@ -127,28 +132,41 @@ p, li, span, label, input, textarea {
     position: relative;
 }
 .panel{
+    display: inline-flexbox;
     position: absolute;
-    border: 1px dashed coral;
-    width: 350px;
-    min-height: 150px;
+    border: 1px solid coral;
+    width: 300px;
+    height: 130px;
     background-color: var(--panelColor);
+    padding: 20px;
+
+}
+.panel h3{
+    font-size: 15px;
+}
+.logo{
+    margin-top: 20px;
+    height: 90px;
+    width: 90px;
+}
+#flatiron-logo{
+    border-radius: 50%;
 }
 #my-title{
     margin: 0;
     text-align: center;
-
-}
-#bootcamp{
-    text-align: center;
-
-    margin-left: 100px;
-    margin-top: 120px;
 }
 #college{
-    text-align: center;
-
+    margin-left: 100px;
+    margin-top: 130px;
+}
+#bootcamp{
     margin-left: 200px;
-    margin-top: 240px;
+    margin-top: 260px;
+}
+#bootcamp span{
+    margin-top: 0;
+    padding-bottom: 100px;
 }
 
 .right-column{
@@ -167,7 +185,7 @@ p, li, span, label, input, textarea {
     justify-content: space-evenly;
 }
 .skill-circle{
-    border: 1px solid black;
+    border: 1px solid coral;
     margin: 5px;
     width: 100px;
     height: 100px;

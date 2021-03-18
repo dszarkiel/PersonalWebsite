@@ -20,6 +20,7 @@
         <div class="main-container">
             <div class="welcome-wrapper">
                 <h1>Hi, I'm Dominik Szarkiel</h1>
+                <h6>(Dominic Shark-yell)</h6>
             </div>
         
             <div class="intro-wrapper">
@@ -38,15 +39,31 @@
                 <div class="left-column">
                     <img id="profile_pic"src="images/ProfilePhoto.jpeg">
                     <hr>
-                    <a href="resume.pdf" target="_blank">Download Resume</a>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat laboriosam suscipit, impedit ipsa dolores consequuntur, vero nihil, aspernatur sunt earum assumenda minima id atque ut iure vel perspiciatis hic animi!</p>
-                </div>
+                    <p>Experienced in Ruby on Rails and JavaScript based programming with a background in Finance. Through my multiple
+                        rotations at PNC, I possess strong skills in communication and project management with internal and external customers.
+                        I was relied upon to learn complex concepts and problems quickly and help implement them with the team.</p>
+                    <hr>
+                        
+                        <a href="resume.pdf" target="_blank">Download Resume</a>
+                    </div>
 
                 <div class="right-column">
                     <div id="education-panels">
-                        <h3 id="my-title" class="panel">Who I am</h3>
-                        <h3 id="bootcamp" class="panel">Flatiron</h3>
-                        <h3 id="college" class="panel">ISU</h3>
+
+                        <div id="my-title" class="panel">
+                            <h3>Aspiring Full-Stack Software Engineer</h3>
+                        </div>
+
+                        <div id="college" class="panel">
+                            <img class="logo" src="images/ISU_logo.png">
+                            <span>TEXT</span>
+                        </div>
+                        <div id="bootcamp" class="panel">
+                            <img id="flatiron-logo" class="logo" src="images/Flatiron_logo.png">
+                            <span>Full-Stack Software Engineering Program, 
+                                Graduated 2021
+                            </span>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -181,7 +198,7 @@
             arr.push(react, redux, rails, sql, bootstrap)
             arr.forEach(tech => {
                 tech.style.borderWidth = "thick";
-                tech.style.margin = "1px"
+                tech.style.margin = "1px";
             })
             }
         function phaseOutCapitall(){
