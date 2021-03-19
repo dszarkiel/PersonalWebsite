@@ -132,23 +132,37 @@ p, li, span, label, input, textarea {
     position: relative;
 }
 .panel{
-    display: inline-flexbox;
+    display: flex;
     position: absolute;
     border: 1px solid coral;
     width: 300px;
     height: 130px;
     background-color: var(--panelColor);
     padding: 20px;
-
+    align-items: center;
 }
 .panel h3{
     font-size: 15px;
 }
 .logo{
-    margin-top: 20px;
+    display: block;
     height: 90px;
     width: 90px;
 }
+
+.inner-panel{
+    float:left;
+}
+.caption{
+    display: block;
+    width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.caption-col{
+    margin-left: 15px;
+}
+
 #flatiron-logo{
     border-radius: 50%;
 }
@@ -211,9 +225,18 @@ p, li, span, label, input, textarea {
     width:100%;
     height: 180px;
     object-fit: cover;
+    border-bottom: 1px solid black;
 }
 .project, .blog{
     border: 1px solid black;
+    position: relative;
+    /* padding: 10px ; */
+}
+.links{
+    position: absolute;
+    border-top: 1px red solid;
+    bottom: 0;
+    width: 100%;
 }
 
 .project:hover, .blog:hover{
