@@ -230,13 +230,19 @@ p, li, span, label, input, textarea {
 .project, .blog{
     border: 1px solid black;
     position: relative;
-    /* padding: 10px ; */
 }
 .links{
     position: absolute;
     border-top: 1px red solid;
     bottom: 0;
     width: 100%;
+    min-height: 50px;
+    text-align: center;
+    padding-top: 5px;
+}
+.icon{
+    margin-left: 10px;
+    margin-right: 10px;
 }
 
 .project:hover, .blog:hover{
@@ -248,6 +254,7 @@ p, li, span, label, input, textarea {
     padding-bottom: 5px;
     padding-right: 5px;
     padding-left: 5px;
+    margin-bottom: 50px;
 }
 
 .project-preview h6{
