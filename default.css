@@ -130,7 +130,9 @@ p, li, span, label, input, textarea {
 }
 .left-column p{
     color: var(--primaryColor)
-
+}
+#resume-message{
+    color: var(--borderColor)
 }
 #profile_pic{
     display: block;
@@ -312,9 +314,12 @@ p, li, span, label, input, textarea {
     color: var(--secondaryColor)
 }
 .blog-desc{
-    color: var(--primaryColor)
+    color: var(--secondaryColor);
 }
+.blog{
+    background-color: var(--primaryColor);
 
+}
 .blog-preview h6{
     margin-top: 10px;
     margin-bottom: 5px;
@@ -408,6 +413,9 @@ p, li, span, label, input, textarea {
     .link-box{
         margin-top: 25px;
         margin-bottom: 25px;
+    }
+    .footer{
+        height: 75px;
     }
 }
 
