@@ -29,6 +29,7 @@
 
                     <ul class="left-links">
                         <li><a href="#portfolio">Portfolio</a></li>
+                        <li>|</li>
                         <li><a href="#blogs">Blogs</a></li>
                     </ul>
                     
@@ -231,34 +232,41 @@
                 <h3>Let's Connect!</h3>
                 <div class="link-container">
                     <div class="link-box">
-                        <a href="https://www.linkedin.com/in/dominikszarkiel" target="_blank"><i class="fab fa-linkedin fa-10x"></i></a>
+                        <a id="linkedin" href="https://www.linkedin.com/in/dominikszarkiel" target="_blank"><i class="fab fa-linkedin fa-10x"></i></a>
+                        <h3>LinkedIn</h3>
                     </div>
                     <div class="link-box">
-                        <a href="https://github.com/dszarkiel" target="_blank"><i class="fab fa-github-square fa-10x"></i></a>
+                        <a id="github" href="https://github.com/dszarkiel" target="_blank"><i class="fab fa-github-square fa-10x"></i></a>
+                        <h3>GitHub</h3>
                     </div>
                     <div class="link-box">
-                        <a href="https://www.youtube.com/channel/UCimdv1QVped81I0hNfHmoiQ" target="_blank"><i class="fab fa-youtube-square fa-10x"></i></a>
+                        <a id="youtube" href="https://www.youtube.com/channel/UCimdv1QVped81I0hNfHmoiQ" target="_blank"><i class="fab fa-youtube-square fa-10x"></i></a>
+                        <h3>YouTube</h3>                        
                     </div>
                     <div class="link-box">
-                        <a href="https://d-szarkiel.medium.com" target="_blank"><i class="fab fa-medium-m fa-10x"></i></a>
+                        <a id="medium" href="https://d-szarkiel.medium.com" target="_blank"><i class="fab fa-medium fa-10x"></i></a>
+                        <h3>Blog</h3>                    
                     </div>
                 </div>
             </div>
         </div>
     </section> 
 
-    <section class="section-2">
+    <section class="section-3">
         <div class="main-container">
             <div class="footer">
-                <div class="footer-col">footer col-1</div>
-                <div class="footer-col">footer col-2</div>
-                <div class="footer-col">footer col-3</div>
+                <div class="footer-col">
+                    <h6>
+                        Dominik R. Szarkiel - Aspiring Software Engineer - d.szarkiel@gmail.com
+                    </h6>       
+                </div>
             </div>
         </div>
     </section> 
     
     <script>
         let arr = [];
+        const portfolio = document.querySelector("#portfolio")
         const javascript = document.querySelector("#javascript");
         const react = document.querySelector("#react");
         const redux = document.querySelector("#redux");
@@ -269,6 +277,7 @@
         const bootstrap = document.querySelector("#bootstrap");
 
         function renderCapitall() {
+            portfolio.scrollIntoView()
             arr.push(react, redux, rails, sql, bootstrap)
             arr.forEach(tech => {
                 tech.style.borderWidth = "thick";
@@ -284,6 +293,7 @@
             }
 
         function renderLocalVoyage() {
+            portfolio.scrollIntoView()
             arr.push(javascript, rails, sql, html_css)
             arr.forEach(tech => {
                 tech.style.borderWidth = "thick";
@@ -299,6 +309,7 @@
         }
 
         function renderMarketplace() {
+            portfolio.scrollIntoView()
             arr.push(ruby, rails, sql, html_css, bootstrap)
             arr.forEach(tech => {
                 tech.style.borderWidth = "thick";
